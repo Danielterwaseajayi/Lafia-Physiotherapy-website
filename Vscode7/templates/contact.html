@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us – Lafia Physiotherapy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="contact-page">
+    <header>
+        <img src="{{ url_for('static', filename='lafia_logo.png') }}" class="logo">
+        <h2><i class="fas fa-address-book"></i> Contact Us</h2>
+    </header>
+
+    <form action="/message" method="POST" class="form-box">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <footer>
+        <p>📍 Lafia Physiotherapy, Abuja</p>
+        <p>📞 +234 800 123 4567 | ✉️ info@lafiaphysio.com</p>
+        <p>
+            <a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">WhatsApp</a>
+        </p>
+    </footer>
+</body>
+</html>
+<footer>
+    <p>&copy; 2023 Lafia Physiotherapy</p>
+    <img src="{{ url_for('static', filename='lafia_logo.png') }}" alt="Lafia Physiotherapy Logo" class="logo">
