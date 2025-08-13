@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Not Found – Lafia Physiotherapy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="error-page">
+    <header>
+        <img src="{{ url_for('static', filename='lafia_logo.png') }}" class="logo">
+        <h2>404 – Page Not Found</h2>
+    </header>
+
+    <section class="form-box">
+        <p>Oops! The page you're looking for doesn't exist.</p>
+        <p><a href="/dashboard">← Back to Dashboard</a></p>
+    </section>
+
+    <footer>
+        <p>📍 Lafia Physiotherapy, Abuja</p>
+        <p>📞 +234 800 123 4567 | ✉️ info@lafiaphysio.com</p>
+        <p><a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">WhatsApp</a></p>
+    </footer>
+</body>
+</html>
+<footer>
+    <p>&copy; 2023 Lafia Physiotherapy</p>
+    <img src="{{ url_for('static', filename='lafia_logo.png') }}" alt="Lafia Physiotherapy Logo" class="logo">
